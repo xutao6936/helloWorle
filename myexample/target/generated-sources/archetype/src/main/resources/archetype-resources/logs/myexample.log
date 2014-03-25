@@ -1,0 +1,55 @@
+15:33:06.069 [main] WARN  o.s.modules.utils.Reflections - AccountService$$EnhancerByCGLIB$$381867d's superclass not ParameterizedType
+15:33:06.264 [main] WARN  o.s.modules.utils.Reflections - ManagmentService$$EnhancerByCGLIB$$b9937a0b's superclass not ParameterizedType
+15:33:08.017 [main] WARN  o.s.modules.utils.Reflections - AuthirityService$$EnhancerByCGLIB$$6757d02c's superclass not ParameterizedType
+15:33:53.116 [qtp7059772-21] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
+as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
+acc_user user0_ where user0_.log_name='xutao'  {executed in 70 msec}
+15:33:53.173 [qtp7059772-21] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 4 msec}
+15:34:01.859 [qtp7059772-21] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
+as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
+acc_user user0_ where user0_.log_name='xutao'  {executed in 1 msec}
+15:34:01.863 [qtp7059772-21] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 1 msec}
+15:34:06.171 [qtp7059772-21] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
+as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
+acc_user user0_ where user0_.log_name='xutao'  {executed in 6 msec}
+15:34:06.175 [qtp7059772-21] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 1 msec}
+15:34:06.299 [qtp7059772-23] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
+as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
+acc_user user0_ where user0_.log_name='xutao'  {executed in 2 msec}
+15:34:06.304 [qtp7059772-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 2 msec}
+15:34:06.347 [qtp7059772-23] INFO  jdbc.sqltiming - select roleauthmi0_.role_id as role3_2_2_, roleauthmi0_.id as id1_3_2_, roleauthmi0_.id as 
+id1_3_1_, roleauthmi0_.auth_id as auth2_3_1_, roleauthmi0_.role_id as role3_3_1_, authirity1_.id 
+as id1_1_0_, authirity1_.auth_code as auth2_1_0_, authirity1_.auth_name as auth3_1_0_ from 
+role_auth_middle roleauthmi0_ left outer join acct_authirity authirity1_ on roleauthmi0_.auth_id=authirity1_.id 
+where roleauthmi0_.role_id=1  {executed in 31 msec}
+15:34:11.016 [qtp7059772-19] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 1 msec}
+15:34:11.021 [qtp7059772-19] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
+as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
+as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 3 msec}
+15:34:11.024 [qtp7059772-19] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 1 msec}
+15:34:11.027 [qtp7059772-19] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
+ {executed in 2 msec}
+15:34:15.995 [qtp7059772-24] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where user0_.name like '%ad%'  {executed in 2 msec}
+15:34:15.999 [qtp7059772-24] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
+as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
+as salt6_0_ from acc_user user0_ where user0_.name like '%ad%' order by user0_.id desc ) where 
+rownum <= 3  {executed in 2 msec}
+15:34:16.002 [qtp7059772-24] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 1 msec}
+15:53:50.265 [main] WARN  o.s.modules.utils.Reflections - AccountService$$EnhancerByCGLIB$$5ae16362's superclass not ParameterizedType
+15:53:50.427 [main] WARN  o.s.modules.utils.Reflections - ManagmentService$$EnhancerByCGLIB$$10f356f0's superclass not ParameterizedType
+15:53:51.886 [main] WARN  o.s.modules.utils.Reflections - AuthirityService$$EnhancerByCGLIB$$beb7ad11's superclass not ParameterizedType
+15:56:18.730 [main] WARN  o.s.modules.utils.Reflections - AccountService$$EnhancerByCGLIB$$324e4617's superclass not ParameterizedType
+15:56:18.896 [main] WARN  o.s.modules.utils.Reflections - ManagmentService$$EnhancerByCGLIB$$e86039a5's superclass not ParameterizedType
+15:56:20.407 [main] WARN  o.s.modules.utils.Reflections - AuthirityService$$EnhancerByCGLIB$$96248fc6's superclass not ParameterizedType
+16:02:33.689 [main] WARN  o.s.modules.utils.Reflections - AccountService$$EnhancerByCGLIB$$2ad5f622's superclass not ParameterizedType
+16:02:33.859 [main] WARN  o.s.modules.utils.Reflections - ManagmentService$$EnhancerByCGLIB$$e0e7e9b0's superclass not ParameterizedType
+16:02:35.401 [main] WARN  o.s.modules.utils.Reflections - AuthirityService$$EnhancerByCGLIB$$8eac3fd1's superclass not ParameterizedType
+16:03:35.983 [main] WARN  o.s.modules.utils.Reflections - AccountService$$EnhancerByCGLIB$$5ae16362's superclass not ParameterizedType
+16:03:36.148 [main] WARN  o.s.modules.utils.Reflections - ManagmentService$$EnhancerByCGLIB$$10f356f0's superclass not ParameterizedType
+16:03:37.674 [main] WARN  o.s.modules.utils.Reflections - AuthirityService$$EnhancerByCGLIB$$beb7ad11's superclass not ParameterizedType

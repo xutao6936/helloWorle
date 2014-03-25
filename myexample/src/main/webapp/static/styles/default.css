@@ -1,0 +1,48 @@
+/* header */
+#header {margin-bottom:15px;}
+
+#header h1 a {
+	color: #658A16;
+	text-decoration: none
+}
+
+#header h1 small {color: #BACE87;}
+
+/* footer */
+#footer {
+	margin-top: 15px;
+	padding: 15px 0px 0px 0px;
+	font-size: 95%;
+	text-align: center;
+	border-top: 2px solid #658A16;
+}
+
+#footer a {color: #999;}
+
+.topForm{
+	margin-top:100px;
+}
+
+.top_arrow {
+border: 0 none;
+bottom: 150px;
+cursor: pointer;
+display: block;
+height: auto;
+margin: 0;
+opacity: 0.5;
+padding: 0;
+position: fixed;
+right: 40px;
+width: 35px;
+z-index: 2147483647;
+}
+
+span.must {
+    color: red;
+    padding-left: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:jaxws="http://cxf.apache.org/jaxws"
+    xsi:schemaLocation="http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd ">
+ 	<description>Apache CXF soap web  service 的配置</description>
+						
+ 
+	<!-- jax-ws endpoint定义  -->
+	<jaxws:endpoint address="/soap/userservice">
+		<jaxws:implementor ref="userSoapService" />
+	</jaxws:endpoint>
+	<!-- WebService的实现Bean定义 -->
+	<bean id="userSoapService" class="it.pkg.webservice.UserSoapServiceImpl" />
+</beans>

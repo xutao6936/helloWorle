@@ -1,0 +1,117 @@
+11:17:27.582 [main] WARN  o.s.modules.utils.Reflections - AccountService$$EnhancerByCGLIB$$fae283ab's superclass not ParameterizedType
+11:17:27.797 [main] WARN  o.s.modules.utils.Reflections - ManagmentService$$EnhancerByCGLIB$$b0f47739's superclass not ParameterizedType
+11:17:29.561 [main] WARN  o.s.modules.utils.Reflections - AuthirityService$$EnhancerByCGLIB$$5eb8cd5a's superclass not ParameterizedType
+11:18:13.480 [qtp1182899-21] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
+as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
+acc_user user0_ where user0_.log_name='xutao'  {executed in 30 msec}
+11:18:13.525 [qtp1182899-21] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 12 msec}
+11:18:13.834 [qtp1182899-17] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
+as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
+acc_user user0_ where user0_.log_name='xutao'  {executed in 2 msec}
+11:18:13.839 [qtp1182899-17] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 1 msec}
+11:18:13.875 [qtp1182899-17] INFO  jdbc.sqltiming - select roleauthmi0_.role_id as role3_2_2_, roleauthmi0_.id as id1_3_2_, roleauthmi0_.id as 
+id1_3_1_, roleauthmi0_.auth_id as auth2_3_1_, roleauthmi0_.role_id as role3_3_1_, authirity1_.id 
+as id1_1_0_, authirity1_.auth_code as auth2_1_0_, authirity1_.auth_name as auth3_1_0_ from 
+role_auth_middle roleauthmi0_ left outer join acct_authirity authirity1_ on roleauthmi0_.auth_id=authirity1_.id 
+where roleauthmi0_.role_id=1  {executed in 24 msec}
+11:18:17.314 [qtp1182899-23] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 2 msec}
+11:18:17.318 [qtp1182899-23] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
+as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
+as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 2 msec}
+11:18:17.322 [qtp1182899-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 1 msec}
+11:18:17.325 [qtp1182899-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
+ {executed in 1 msec}
+11:27:09.745 [qtp1182899-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_, role0_.role_name as role2_2_ from acct_role role0_  {executed in 53 msec}
+11:27:09.851 [qtp1182899-23] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
+as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
+acc_user user0_ where user0_.log_name='xutao'  {executed in 10 msec}
+11:27:09.869 [qtp1182899-23] INFO  jdbc.sqltiming - select roleauthmi0_.role_id as role3_2_2_, roleauthmi0_.id as id1_3_2_, roleauthmi0_.id as 
+id1_3_1_, roleauthmi0_.auth_id as auth2_3_1_, roleauthmi0_.role_id as role3_3_1_, authirity1_.id 
+as id1_1_0_, authirity1_.auth_code as auth2_1_0_, authirity1_.auth_name as auth3_1_0_ from 
+role_auth_middle roleauthmi0_ left outer join acct_authirity authirity1_ on roleauthmi0_.auth_id=authirity1_.id 
+where roleauthmi0_.role_id=1  {executed in 15 msec}
+11:27:13.032 [qtp1182899-20] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
+as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
+acc_user user0_ where user0_.log_name='xutao'  {executed in 3 msec}
+11:27:13.038 [qtp1182899-20] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 3 msec}
+15:41:14.386 [main] WARN  o.s.modules.utils.Reflections - AccountService$$EnhancerByCGLIB$$5ae16362's superclass not ParameterizedType
+15:41:14.566 [main] WARN  o.s.modules.utils.Reflections - ManagmentService$$EnhancerByCGLIB$$10f356f0's superclass not ParameterizedType
+15:41:16.203 [main] WARN  o.s.modules.utils.Reflections - AuthirityService$$EnhancerByCGLIB$$beb7ad11's superclass not ParameterizedType
+15:41:47.599 [qtp6550959-23] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
+as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
+acc_user user0_ where user0_.log_name='xutao'  {executed in 86 msec}
+15:41:47.627 [qtp6550959-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 4 msec}
+15:41:48.209 [qtp6550959-19] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
+as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
+acc_user user0_ where user0_.log_name='xutao'  {executed in 1 msec}
+15:41:48.212 [qtp6550959-19] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 1 msec}
+15:41:48.245 [qtp6550959-19] INFO  jdbc.sqltiming - select roleauthmi0_.role_id as role3_2_2_, roleauthmi0_.id as id1_3_2_, roleauthmi0_.id as 
+id1_3_1_, roleauthmi0_.auth_id as auth2_3_1_, roleauthmi0_.role_id as role3_3_1_, authirity1_.id 
+as id1_1_0_, authirity1_.auth_code as auth2_1_0_, authirity1_.auth_name as auth3_1_0_ from 
+role_auth_middle roleauthmi0_ left outer join acct_authirity authirity1_ on roleauthmi0_.auth_id=authirity1_.id 
+where roleauthmi0_.role_id=1  {executed in 26 msec}
+15:42:13.846 [qtp6550959-20] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 4 msec}
+15:42:13.853 [qtp6550959-20] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
+as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
+as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 6 msec}
+15:42:13.856 [qtp6550959-20] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 1 msec}
+15:42:13.859 [qtp6550959-20] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
+ {executed in 2 msec}
+15:50:14.519 [main] WARN  o.s.modules.utils.Reflections - AccountService$$EnhancerByCGLIB$$d99b9abd's superclass not ParameterizedType
+15:50:14.684 [main] WARN  o.s.modules.utils.Reflections - ManagmentService$$EnhancerByCGLIB$$8fad8e4b's superclass not ParameterizedType
+15:50:16.174 [main] WARN  o.s.modules.utils.Reflections - AuthirityService$$EnhancerByCGLIB$$3d71e46c's superclass not ParameterizedType
+15:50:40.224 [qtp12263085-19] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
+as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
+acc_user user0_ where user0_.log_name='xutao'  {executed in 53 msec}
+15:50:40.282 [qtp12263085-19] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 18 msec}
+15:50:40.333 [qtp12263085-19] INFO  jdbc.sqltiming - select roleauthmi0_.role_id as role3_2_2_, roleauthmi0_.id as id1_3_2_, roleauthmi0_.id as 
+id1_3_1_, roleauthmi0_.auth_id as auth2_3_1_, roleauthmi0_.role_id as role3_3_1_, authirity1_.id 
+as id1_1_0_, authirity1_.auth_code as auth2_1_0_, authirity1_.auth_name as auth3_1_0_ from 
+role_auth_middle roleauthmi0_ left outer join acct_authirity authirity1_ on roleauthmi0_.auth_id=authirity1_.id 
+where roleauthmi0_.role_id=1  {executed in 18 msec}
+15:50:40.442 [qtp12263085-19] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 1 msec}
+15:50:40.446 [qtp12263085-19] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
+as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
+as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 2 msec}
+15:50:40.449 [qtp12263085-19] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
+ {executed in 1 msec}
+15:53:05.784 [qtp12263085-20] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
+as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
+acc_user user0_ where user0_.log_name='xutao'  {executed in 2 msec}
+15:53:05.788 [qtp12263085-20] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 2 msec}
+15:53:05.792 [qtp12263085-20] INFO  jdbc.sqltiming - select roleauthmi0_.role_id as role3_2_2_, roleauthmi0_.id as id1_3_2_, roleauthmi0_.id as 
+id1_3_1_, roleauthmi0_.auth_id as auth2_3_1_, roleauthmi0_.role_id as role3_3_1_, authirity1_.id 
+as id1_1_0_, authirity1_.auth_code as auth2_1_0_, authirity1_.auth_name as auth3_1_0_ from 
+role_auth_middle roleauthmi0_ left outer join acct_authirity authirity1_ on roleauthmi0_.auth_id=authirity1_.id 
+where roleauthmi0_.role_id=1  {executed in 2 msec}
+15:53:05.802 [qtp12263085-20] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 1 msec}
+15:53:05.805 [qtp12263085-20] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
+as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
+as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 2 msec}
+15:53:05.808 [qtp12263085-20] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
+ {executed in 1 msec}
+15:53:07.797 [qtp12263085-23] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 1 msec}
+15:53:07.801 [qtp12263085-23] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
+as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
+as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 2 msec}
+15:53:07.805 [qtp12263085-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 1 msec}
+15:53:07.808 [qtp12263085-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
+ {executed in 1 msec}
+15:54:32.037 [qtp12263085-23] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 2 msec}
+15:54:32.040 [qtp12263085-23] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
+as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
+as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 2 msec}
+15:54:32.044 [qtp12263085-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
+ {executed in 2 msec}
+15:54:32.048 [qtp12263085-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
+ {executed in 2 msec}
