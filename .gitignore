@@ -9,7 +9,7 @@
 .idea/
 
 # Others
-target/
+myexample/target/
 myexample/logs/
 
 #/src/main/resources/application.local.properties
