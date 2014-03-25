@@ -1,6 +1,16 @@
-*.class
+# Eclipse project files
+.classpath
+.project
+.settings/
 
-# Package Files #
-*.jar
-*.war
-*.ear
+
+# Intellij project files
+*.iml
+.idea/
+
+# Others
+target/
+myexample/logs/
+
+#/src/main/resources/application.local.properties
+#/src/test/resources/application.test.local.properties
