@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springside.modules.web.Servlets;
 
-import com.thomas.myexample.service.account.BaseService;
-import com.thomas.myexample.service.account.ShiroUser;
+import com.thomas.myexample.service.basedata.BaseService;
+import com.thomas.myexample.service.basedata.ShiroUser;
 import com.thomas.myexample.web.utils.UrlMappingUtils;
 
 /** 

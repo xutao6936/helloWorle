@@ -2,13 +2,11 @@ package com.thomas.myexample.webservice.response;
 
 import javax.xml.bind.annotation.XmlType;
 
-
-import com.thomas.myexample.entity.Role;
 import com.thomas.myexample.webservice.WsConstants;
 import com.thomas.myexample.webservice.response.dto.RoleDto;
 
-@XmlType(name="GetRoleResult",namespace=WsConstants.NS)
-public class GetRoleResult extends WSResult{
+@XmlType(name = "GetRoleResult", namespace = WsConstants.NS)
+public class GetRoleResult extends WSResult {
 	private RoleDto dto;
 
 	public RoleDto getDto() {
@@ -19,6 +17,4 @@ public class GetRoleResult extends WSResult{
 		this.dto = dto;
 	}
 
-	
-	
 }

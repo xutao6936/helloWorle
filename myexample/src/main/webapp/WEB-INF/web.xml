@@ -90,7 +90,15 @@
 		<servlet-name>CXFServlet</servlet-name>
 		<url-pattern>/cxf/*</url-pattern>
 	</servlet-mapping>
-	
+	<!--  将数据字典加载到内存中-->
+	<servlet>
+		<servlet-name>AcctDictServlet</servlet-name>	
+		<servlet-class>com.thomas.myexample.utils.AcctDictServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AcctDictServlet</servlet-name>
+		<url-pattern>/acct-dict-servlet</url-pattern>
+	</servlet-mapping>
 	<session-config>
 		<session-timeout>20</session-timeout>
 	</session-config>

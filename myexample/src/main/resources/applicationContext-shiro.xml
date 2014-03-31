@@ -9,11 +9,24 @@
 	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
 		<property name="realm" ref="shiroDbRealm" />
 		<property name="cacheManager" ref="shiroEhcacheManager" />
+		<property name="rememberMeManager" ref="rememberMeManager"/>
 	</bean>
-
-	<!-- 項目自定义的Realm, 所有accountService依赖的dao都需要用depends-on声明 -->
-	<bean id="shiroDbRealm" class="com.thomas.myexample.service.account.ShiroDbRealm" depends-on="userDao,roleDao">
-		<property name="accountService" ref="accountService"/>
+	<!-- 由于默认的shiro记住我为1年， 更改时间需要重写 -->
+	<!-- rememberMe管理器 -->
+	<bean id="rememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
+	    <property name="cipherKey" value="#{T(org.apache.shiro.codec.Base64).decode('4AvVhmFLUs0KTA3Kprsdag==')}"/>
+	     <property name="cookie" ref="rememberMeCookie"/>
+	</bean> 
+	<bean id="rememberMeCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+	    <constructor-arg value="rememberMe"/>
+	    <property name="httpOnly" value="true"/>
+	    <property name="maxAge" value="864000"/><!-- 10天 单位s -->
+	</bean>
+	
+	
+	<!-- 項目自定义的Realm, 所有userService依赖的dao都需要用depends-on声明 -->
+	<bean id="shiroDbRealm" class="com.thomas.myexample.service.basedata.ShiroDbRealm" depends-on="userDao">
+		<property name="userService" ref="userService"/>
 	</bean>
 	
 	<!-- Shiro Filter -->

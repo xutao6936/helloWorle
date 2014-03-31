@@ -1,117 +1,169 @@
-11:17:27.582 [main] WARN  o.s.modules.utils.Reflections - AccountService$$EnhancerByCGLIB$$fae283ab's superclass not ParameterizedType
-11:17:27.797 [main] WARN  o.s.modules.utils.Reflections - ManagmentService$$EnhancerByCGLIB$$b0f47739's superclass not ParameterizedType
-11:17:29.561 [main] WARN  o.s.modules.utils.Reflections - AuthirityService$$EnhancerByCGLIB$$5eb8cd5a's superclass not ParameterizedType
-11:18:13.480 [qtp1182899-21] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
-as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
-acc_user user0_ where user0_.log_name='xutao'  {executed in 30 msec}
-11:18:13.525 [qtp1182899-21] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
- {executed in 12 msec}
-11:18:13.834 [qtp1182899-17] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
-as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
-acc_user user0_ where user0_.log_name='xutao'  {executed in 2 msec}
-11:18:13.839 [qtp1182899-17] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
- {executed in 1 msec}
-11:18:13.875 [qtp1182899-17] INFO  jdbc.sqltiming - select roleauthmi0_.role_id as role3_2_2_, roleauthmi0_.id as id1_3_2_, roleauthmi0_.id as 
-id1_3_1_, roleauthmi0_.auth_id as auth2_3_1_, roleauthmi0_.role_id as role3_3_1_, authirity1_.id 
-as id1_1_0_, authirity1_.auth_code as auth2_1_0_, authirity1_.auth_name as auth3_1_0_ from 
-role_auth_middle roleauthmi0_ left outer join acct_authirity authirity1_ on roleauthmi0_.auth_id=authirity1_.id 
-where roleauthmi0_.role_id=1  {executed in 24 msec}
-11:18:17.314 [qtp1182899-23] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 2 msec}
-11:18:17.318 [qtp1182899-23] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
-as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
-as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 2 msec}
-11:18:17.322 [qtp1182899-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
- {executed in 1 msec}
-11:18:17.325 [qtp1182899-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
- {executed in 1 msec}
-11:27:09.745 [qtp1182899-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_, role0_.role_name as role2_2_ from acct_role role0_  {executed in 53 msec}
-11:27:09.851 [qtp1182899-23] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
-as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
-acc_user user0_ where user0_.log_name='xutao'  {executed in 10 msec}
-11:27:09.869 [qtp1182899-23] INFO  jdbc.sqltiming - select roleauthmi0_.role_id as role3_2_2_, roleauthmi0_.id as id1_3_2_, roleauthmi0_.id as 
-id1_3_1_, roleauthmi0_.auth_id as auth2_3_1_, roleauthmi0_.role_id as role3_3_1_, authirity1_.id 
-as id1_1_0_, authirity1_.auth_code as auth2_1_0_, authirity1_.auth_name as auth3_1_0_ from 
-role_auth_middle roleauthmi0_ left outer join acct_authirity authirity1_ on roleauthmi0_.auth_id=authirity1_.id 
-where roleauthmi0_.role_id=1  {executed in 15 msec}
-11:27:13.032 [qtp1182899-20] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
-as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
-acc_user user0_ where user0_.log_name='xutao'  {executed in 3 msec}
-11:27:13.038 [qtp1182899-20] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
- {executed in 3 msec}
-15:41:14.386 [main] WARN  o.s.modules.utils.Reflections - AccountService$$EnhancerByCGLIB$$5ae16362's superclass not ParameterizedType
-15:41:14.566 [main] WARN  o.s.modules.utils.Reflections - ManagmentService$$EnhancerByCGLIB$$10f356f0's superclass not ParameterizedType
-15:41:16.203 [main] WARN  o.s.modules.utils.Reflections - AuthirityService$$EnhancerByCGLIB$$beb7ad11's superclass not ParameterizedType
-15:41:47.599 [qtp6550959-23] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
-as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
-acc_user user0_ where user0_.log_name='xutao'  {executed in 86 msec}
-15:41:47.627 [qtp6550959-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
- {executed in 4 msec}
-15:41:48.209 [qtp6550959-19] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
-as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
-acc_user user0_ where user0_.log_name='xutao'  {executed in 1 msec}
-15:41:48.212 [qtp6550959-19] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
- {executed in 1 msec}
-15:41:48.245 [qtp6550959-19] INFO  jdbc.sqltiming - select roleauthmi0_.role_id as role3_2_2_, roleauthmi0_.id as id1_3_2_, roleauthmi0_.id as 
-id1_3_1_, roleauthmi0_.auth_id as auth2_3_1_, roleauthmi0_.role_id as role3_3_1_, authirity1_.id 
-as id1_1_0_, authirity1_.auth_code as auth2_1_0_, authirity1_.auth_name as auth3_1_0_ from 
-role_auth_middle roleauthmi0_ left outer join acct_authirity authirity1_ on roleauthmi0_.auth_id=authirity1_.id 
-where roleauthmi0_.role_id=1  {executed in 26 msec}
-15:42:13.846 [qtp6550959-20] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 4 msec}
-15:42:13.853 [qtp6550959-20] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
-as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
-as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 6 msec}
-15:42:13.856 [qtp6550959-20] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
- {executed in 1 msec}
-15:42:13.859 [qtp6550959-20] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
- {executed in 2 msec}
-15:50:14.519 [main] WARN  o.s.modules.utils.Reflections - AccountService$$EnhancerByCGLIB$$d99b9abd's superclass not ParameterizedType
-15:50:14.684 [main] WARN  o.s.modules.utils.Reflections - ManagmentService$$EnhancerByCGLIB$$8fad8e4b's superclass not ParameterizedType
-15:50:16.174 [main] WARN  o.s.modules.utils.Reflections - AuthirityService$$EnhancerByCGLIB$$3d71e46c's superclass not ParameterizedType
-15:50:40.224 [qtp12263085-19] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
-as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
-acc_user user0_ where user0_.log_name='xutao'  {executed in 53 msec}
-15:50:40.282 [qtp12263085-19] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
- {executed in 18 msec}
-15:50:40.333 [qtp12263085-19] INFO  jdbc.sqltiming - select roleauthmi0_.role_id as role3_2_2_, roleauthmi0_.id as id1_3_2_, roleauthmi0_.id as 
-id1_3_1_, roleauthmi0_.auth_id as auth2_3_1_, roleauthmi0_.role_id as role3_3_1_, authirity1_.id 
-as id1_1_0_, authirity1_.auth_code as auth2_1_0_, authirity1_.auth_name as auth3_1_0_ from 
-role_auth_middle roleauthmi0_ left outer join acct_authirity authirity1_ on roleauthmi0_.auth_id=authirity1_.id 
-where roleauthmi0_.role_id=1  {executed in 18 msec}
-15:50:40.442 [qtp12263085-19] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 1 msec}
-15:50:40.446 [qtp12263085-19] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
-as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
-as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 2 msec}
-15:50:40.449 [qtp12263085-19] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
- {executed in 1 msec}
-15:53:05.784 [qtp12263085-20] INFO  jdbc.sqltiming - select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name as log3_0_, user0_.name 
-as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt as salt6_0_ from 
-acc_user user0_ where user0_.log_name='xutao'  {executed in 2 msec}
-15:53:05.788 [qtp12263085-20] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
- {executed in 2 msec}
-15:53:05.792 [qtp12263085-20] INFO  jdbc.sqltiming - select roleauthmi0_.role_id as role3_2_2_, roleauthmi0_.id as id1_3_2_, roleauthmi0_.id as 
-id1_3_1_, roleauthmi0_.auth_id as auth2_3_1_, roleauthmi0_.role_id as role3_3_1_, authirity1_.id 
-as id1_1_0_, authirity1_.auth_code as auth2_1_0_, authirity1_.auth_name as auth3_1_0_ from 
-role_auth_middle roleauthmi0_ left outer join acct_authirity authirity1_ on roleauthmi0_.auth_id=authirity1_.id 
-where roleauthmi0_.role_id=1  {executed in 2 msec}
-15:53:05.802 [qtp12263085-20] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 1 msec}
-15:53:05.805 [qtp12263085-20] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
-as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
-as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 2 msec}
-15:53:05.808 [qtp12263085-20] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
- {executed in 1 msec}
-15:53:07.797 [qtp12263085-23] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 1 msec}
-15:53:07.801 [qtp12263085-23] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
-as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
-as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 2 msec}
-15:53:07.805 [qtp12263085-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
- {executed in 1 msec}
-15:53:07.808 [qtp12263085-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
- {executed in 1 msec}
-15:54:32.037 [qtp12263085-23] INFO  jdbc.sqltiming - select count(*) as col_0_0_ from acc_user user0_ where 1=1  {executed in 2 msec}
-15:54:32.040 [qtp12263085-23] INFO  jdbc.sqltiming - select * from ( select user0_.id as id1_0_, user0_.carete_date as carete2_0_, user0_.log_name 
-as log3_0_, user0_.name as name4_0_, user0_.pwd as pwd5_0_, user0_.role_id as role7_0_, user0_.salt 
-as salt6_0_ from acc_user user0_ where 1=1 order by user0_.id desc ) where rownum <= 3  {executed in 2 msec}
-15:54:32.044 [qtp12263085-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=1 
- {executed in 2 msec}
-15:54:32.048 [qtp12263085-23] INFO  jdbc.sqltiming - select role0_.id as id1_2_0_, role0_.role_name as role2_2_0_ from acct_role role0_ where role0_.id=2 
- {executed in 2 msec}
+11:43:33.794 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* DBMS name: ORACLE Version 
+9i2 */ /* Created on: 2014-03-28 11:08:49 */ /*==============================================================*/ 
+create sequence SEQ_ANAES_METHOD increment by 1 start with 50  {executed in 50 msec}
+11:43:33.825 [main] INFO  jdbc.sqltiming - create sequence SEQ_DIAGNOSIS increment by 1 start with 50  {executed in 2 msec}
+11:43:33.828 [main] INFO  jdbc.sqltiming - create sequence SEQ_DICT increment by 1 start with 50  {executed in 2 msec}
+11:43:33.831 [main] INFO  jdbc.sqltiming - create sequence SEQ_OPERATOR increment by 1 start with 50  {executed in 2 msec}
+11:43:33.841 [main] INFO  jdbc.sqltiming - create sequence SEQ_OPERATROOM increment by 1 start with 50  {executed in 9 msec}
+11:43:33.844 [main] INFO  jdbc.sqltiming - create sequence SEQ_REG_OPT increment by 1 start with 50  {executed in 2 msec}
+11:43:33.847 [main] INFO  jdbc.sqltiming - create sequence SEQ_REG_SHADOW increment by 1 start with 50  {executed in 2 msec}
+11:43:33.852 [main] INFO  jdbc.sqltiming - create sequence SEQ_ROLE increment by 1 start with 50  {executed in 4 msec}
+11:43:33.855 [main] INFO  jdbc.sqltiming - create sequence SEQ_SURGICAL increment by 1 start with 50  {executed in 3 msec}
+11:43:33.858 [main] INFO  jdbc.sqltiming - create sequence SEQ_USER increment by 1 start with 50  {executed in 3 msec}
+11:43:34.102 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Table: ACCT_ANAES_METHOD 
+*/ /*==============================================================*/ create table ACCT_ANAES_METHOD 
+( CODE NUMBER(20) not null, NAME VARCHAR2(50), ENABLE CHAR(2) )  {executed in 243 msec}
+11:43:34.212 [main] INFO  jdbc.sqltiming - alter table ACCT_ANAES_METHOD add constraint PK_ACCT_ANAES_METHOD primary key (CODE)  {executed in 109 msec}
+11:43:34.220 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Table: ACCT_DIAGNOSIS 
+*/ /*==============================================================*/ create table ACCT_DIAGNOSIS 
+( CODE NUMBER(20) not null, NAME VARCHAR2(40), ENABLE CHAR(2), SOURCE_CODE VARCHAR2(20), SOURCE_NAME 
+VARCHAR2(40), PINYIN VARCHAR2(40) )  {executed in 7 msec}
+11:43:34.253 [main] INFO  jdbc.sqltiming - comment on column ACCT_DIAGNOSIS.CODE is '代码'  {executed in 32 msec}
+11:43:34.256 [main] INFO  jdbc.sqltiming - comment on column ACCT_DIAGNOSIS.NAME is '名称'  {executed in 2 msec}
+11:43:34.258 [main] INFO  jdbc.sqltiming - comment on column ACCT_DIAGNOSIS.ENABLE is '是否有效'  {executed in 1 msec}
+11:43:34.261 [main] INFO  jdbc.sqltiming - comment on column ACCT_DIAGNOSIS.SOURCE_CODE is '来源代码'  {executed in 2 msec}
+11:43:34.265 [main] INFO  jdbc.sqltiming - comment on column ACCT_DIAGNOSIS.SOURCE_NAME is '来源名称'  {executed in 4 msec}
+11:43:34.268 [main] INFO  jdbc.sqltiming - comment on column ACCT_DIAGNOSIS.PINYIN is '拼音码'  {executed in 2 msec}
+11:43:34.275 [main] INFO  jdbc.sqltiming - alter table ACCT_DIAGNOSIS add constraint PK_ACCT_DIAGNOSIS primary key (CODE)  {executed in 7 msec}
+11:43:34.280 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Index: INDEX_PINYIN */ 
+/*==============================================================*/ create index INDEX_PINYIN 
+on ACCT_DIAGNOSIS ( PINYIN ASC )  {executed in 4 msec}
+11:43:34.287 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Table: ACCT_DICT */ /*==============================================================*/ 
+create table ACCT_DICT ( CODE NUMBER(20) not null, TYPE_CODE VARCHAR2(50), NAME VARCHAR2(50), 
+VALUE VARCHAR2(50), ENABLE VARCHAR(2), TYPE_NAME VARCHAR2(50) )  {executed in 6 msec}
+11:43:34.289 [main] INFO  jdbc.sqltiming - comment on column ACCT_DICT.CODE is 'CODE'  {executed in 1 msec}
+11:43:34.292 [main] INFO  jdbc.sqltiming - comment on column ACCT_DICT.TYPE_CODE is '大类code'  {executed in 2 msec}
+11:43:34.294 [main] INFO  jdbc.sqltiming - comment on column ACCT_DICT.NAME is '名称'  {executed in 2 msec}
+11:43:34.296 [main] INFO  jdbc.sqltiming - comment on column ACCT_DICT.VALUE is '值'  {executed in 2 msec}
+11:43:34.298 [main] INFO  jdbc.sqltiming - comment on column ACCT_DICT.ENABLE is '是否有效'  {executed in 2 msec}
+11:43:34.300 [main] INFO  jdbc.sqltiming - comment on column ACCT_DICT.TYPE_NAME is '大类名称'  {executed in 2 msec}
+11:43:34.307 [main] INFO  jdbc.sqltiming - alter table ACCT_DICT add constraint PK_ACCT_DICT primary key (CODE)  {executed in 7 msec}
+11:43:34.313 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Index: INDEX_TYPE_NAME 
+*/ /*==============================================================*/ create index INDEX_TYPE_NAME 
+on ACCT_DICT ( TYPE_NAME ASC, CODE ASC )  {executed in 5 msec}
+11:43:34.320 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Table: ACCT_OPERATOR 
+*/ /*==============================================================*/ create table ACCT_OPERATOR 
+( CODE NUMBER(30) not null, NAME VARCHAR2(40), ENABLE CHAR(2), SOURCE_CODE VARCHAR2(30), COMPETENCE 
+VARCHAR2(30) )  {executed in 6 msec}
+11:43:34.322 [main] INFO  jdbc.sqltiming - comment on column ACCT_OPERATOR.CODE is 'CODE'  {executed in 1 msec}
+11:43:34.325 [main] INFO  jdbc.sqltiming - comment on column ACCT_OPERATOR.NAME is '姓名'  {executed in 3 msec}
+11:43:34.328 [main] INFO  jdbc.sqltiming - comment on column ACCT_OPERATOR.ENABLE is '是否有效'  {executed in 2 msec}
+11:43:34.330 [main] INFO  jdbc.sqltiming - comment on column ACCT_OPERATOR.SOURCE_CODE is 'HIS_CODE'  {executed in 2 msec}
+11:43:34.332 [main] INFO  jdbc.sqltiming - comment on column ACCT_OPERATOR.COMPETENCE is '权限码'  {executed in 2 msec}
+11:43:34.338 [main] INFO  jdbc.sqltiming - alter table ACCT_OPERATOR add constraint PK_ACCT_OPERATOR primary key (CODE)  {executed in 6 msec}
+11:43:34.366 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Table: ACCT_OPERATROOM 
+*/ /*==============================================================*/ create table ACCT_OPERATROOM 
+( CODE NUMBER(20) not null, NAME VARCHAR2(40), ENABLE CHAR(2) )  {executed in 27 msec}
+11:43:34.373 [main] INFO  jdbc.sqltiming - alter table ACCT_OPERATROOM add constraint PK_ACCT_OPERATROOM primary key (CODE)  {executed in 6 msec}
+11:43:34.386 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Table: ACCT_REG_OPT */ 
+/*==============================================================*/ create table ACCT_REG_OPT 
+( ID VARCHAR2(40) not null, NAME VARCHAR2(40), SEX VARCHAR2(10), HID VARCHAR2(40), AGE FLOAT, 
+AGE_MONTH FLOAT, SURGICAL_CODE VARCHAR2(40), SURGICAL_NAME VARCHAR2(40), DIALIGS_CODE VARCHAR2(40), 
+DIALIGS_NAME VARCHAR2(40), ANAES_METHOD_CODE VARCHAR2(40), ANAES_METHOD_NAME VARCHAR2(60), 
+OPERROOM VARCHAR2(40), OPER_DATE DATE, CREATE_DATE TIMESTAMP, OPER_TABLE NUMBER(8), CREATE_ID 
+NUMBER(20), SURGICAL_ASSISTANT_CODE VARCHAR2(40), SURGICAL_ASSISTANT_NAME VARCHAR2(40), INSTRUMENT_NURSE_CODE 
+VARCHAR2(40), INSTRUMENT_NURSE_NAME VARCHAR2(40), ANESTHE_CODE VARCHAR2(40), ANESTHE_NAME VARCHAR2(40), 
+ANESTHE_ASSISTANT_CODE VARCHAR2(40), ANESTHE_ASSISTANT_NAME VARCHAR2(40), STATE VARCHAR2(20), 
+SHADOW_ID VARCHAR2(40) )  {executed in 12 msec}
+11:43:34.397 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.ID is 'ID'  {executed in 10 msec}
+11:43:34.399 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.NAME is '姓名'  {executed in 2 msec}
+11:43:34.403 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.SEX is '性别'  {executed in 2 msec}
+11:43:34.405 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.HID is '住院号'  {executed in 1 msec}
+11:43:34.407 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.AGE is '年龄年'  {executed in 1 msec}
+11:43:34.410 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.AGE_MONTH is '年龄月'  {executed in 2 msec}
+11:43:34.412 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.SURGICAL_CODE is '手术代码'  {executed in 1 msec}
+11:43:34.414 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.SURGICAL_NAME is '手术名称'  {executed in 1 msec}
+11:43:34.416 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.DIALIGS_CODE is '诊断代码'  {executed in 1 msec}
+11:43:34.417 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.DIALIGS_NAME is '诊断名称'  {executed in 1 msec}
+11:43:34.419 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.ANAES_METHOD_CODE is '麻醉方法代码'  {executed in 1 msec}
+11:43:34.421 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.ANAES_METHOD_NAME is '麻醉方法名称'  {executed in 1 msec}
+11:43:34.423 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.OPERROOM is '手术室'  {executed in 1 msec}
+11:43:34.424 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.OPER_DATE is '手术日期'  {executed in 1 msec}
+11:43:34.426 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.CREATE_DATE is '创建时间'  {executed in 1 msec}
+11:43:34.428 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.OPER_TABLE is '台次'  {executed in 1 msec}
+11:43:34.430 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.CREATE_ID is '创建人id'  {executed in 1 msec}
+11:43:34.431 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.SURGICAL_ASSISTANT_CODE is '手术助手代码'  {executed in 1 msec}
+11:43:34.433 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.SURGICAL_ASSISTANT_NAME is '手术助手名称'  {executed in 1 msec}
+11:43:34.435 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.INSTRUMENT_NURSE_CODE is '器械护士代码'  {executed in 1 msec}
+11:43:34.437 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.INSTRUMENT_NURSE_NAME is '器械护士名称'  {executed in 1 msec}
+11:43:34.440 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.ANESTHE_CODE is '麻醉医生代码'  {executed in 2 msec}
+11:43:34.441 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.ANESTHE_NAME is '麻醉医生名称'  {executed in 1 msec}
+11:43:34.443 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.ANESTHE_ASSISTANT_CODE is '麻醉助手代码'  {executed in 1 msec}
+11:43:34.446 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.ANESTHE_ASSISTANT_NAME is '麻醉助手名称'  {executed in 1 msec}
+11:43:34.448 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_OPT.STATE is '流程状态'  {executed in 1 msec}
+11:43:34.454 [main] INFO  jdbc.sqltiming - alter table ACCT_REG_OPT add constraint PK_ACCT_REG_OPT primary key (ID)  {executed in 5 msec}
+11:43:34.481 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Table: ACCT_REG_SHADOW 
+*/ /*==============================================================*/ create table ACCT_REG_SHADOW 
+( ID VARCHAR2(40) not null, NAME VARCHAR2(40), SEX VARCHAR2(10), HID VARCHAR2(40), AGE FLOAT, 
+AGE_MONTH FLOAT, SURGICAL_CODE VARCHAR2(40), SURGICAL_NAME VARCHAR2(40), DIALIGS_CODE VARCHAR2(40), 
+DIALIGS_NAME VARCHAR2(40), ANAES_METHOD_CODE VARCHAR2(40), ANAES_METHOD_NAME VARCHAR2(60), 
+OPERROOM VARCHAR2(40), OPER_DATE DATE, CREATE_DATE TIMESTAMP, OPER_TABLE NUMBER(8), CREATE_ID 
+NUMBER(20), SURGICAL_ASSISTANT_CODE VARCHAR2(40), SURGICAL_ASSISTANT_NAME VARCHAR2(40), INSTRUMENT_NURSE_CODE 
+VARCHAR2(40), INSTRUMENT_NURSE_NAME VARCHAR2(40), ANESTHE_CODE VARCHAR2(40), ANESTHE_NAME VARCHAR2(40), 
+ANESTHE_ASSISTANT_CODE VARCHAR2(40), ANESTHE_ASSISTANT_NAME VARCHAR2(40), STATE CHAR(1) )  {executed in 25 msec}
+11:43:34.485 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.ID is 'ID'  {executed in 2 msec}
+11:43:34.488 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.NAME is '姓名'  {executed in 2 msec}
+11:43:34.490 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.SEX is '性别'  {executed in 2 msec}
+11:43:34.493 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.HID is '住院号'  {executed in 1 msec}
+11:43:34.495 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.AGE is '年龄年'  {executed in 2 msec}
+11:43:34.497 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.AGE_MONTH is '年龄月'  {executed in 1 msec}
+11:43:34.501 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.SURGICAL_CODE is '手术代码'  {executed in 3 msec}
+11:43:34.503 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.SURGICAL_NAME is '手术名称'  {executed in 1 msec}
+11:43:34.505 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.DIALIGS_CODE is '诊断代码'  {executed in 1 msec}
+11:43:34.507 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.DIALIGS_NAME is '诊断名称'  {executed in 1 msec}
+11:43:34.510 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.ANAES_METHOD_CODE is '麻醉方法代码'  {executed in 1 msec}
+11:43:34.512 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.ANAES_METHOD_NAME is '麻醉方法名称'  {executed in 2 msec}
+11:43:34.514 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.OPERROOM is '手术室'  {executed in 2 msec}
+11:43:34.516 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.OPER_DATE is '手术日期'  {executed in 2 msec}
+11:43:34.518 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.CREATE_DATE is '创建时间'  {executed in 2 msec}
+11:43:34.520 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.OPER_TABLE is '台次'  {executed in 1 msec}
+11:43:34.521 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.CREATE_ID is '创建人id'  {executed in 1 msec}
+11:43:34.523 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.SURGICAL_ASSISTANT_CODE is '手术助手代码'  {executed in 1 msec}
+11:43:34.527 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.SURGICAL_ASSISTANT_NAME is '手术助手名称'  {executed in 1 msec}
+11:43:34.530 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.INSTRUMENT_NURSE_CODE is '器械护士代码'  {executed in 1 msec}
+11:43:34.533 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.INSTRUMENT_NURSE_NAME is '器械护士名称'  {executed in 1 msec}
+11:43:34.536 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.ANESTHE_CODE is '麻醉医生代码'  {executed in 1 msec}
+11:43:34.539 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.ANESTHE_NAME is '麻醉医生名称'  {executed in 2 msec}
+11:43:34.541 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.ANESTHE_ASSISTANT_CODE is '麻醉助手代码'  {executed in 1 msec}
+11:43:34.544 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.ANESTHE_ASSISTANT_NAME is '麻醉助手名称'  {executed in 1 msec}
+11:43:34.546 [main] INFO  jdbc.sqltiming - comment on column ACCT_REG_SHADOW.STATE is '补录状态'  {executed in 1 msec}
+11:43:34.553 [main] INFO  jdbc.sqltiming - alter table ACCT_REG_SHADOW add constraint PK_ACCT_REG_SHADOW primary key (ID)  {executed in 6 msec}
+11:43:34.558 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Index: INDEX_ANESTHE_CODE 
+*/ /*==============================================================*/ create index INDEX_ANESTHE_CODE 
+on ACCT_REG_SHADOW ( ANESTHE_CODE ASC )  {executed in 4 msec}
+11:43:34.563 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Index: INDEX_ANAES_METHOD 
+*/ /*==============================================================*/ create index INDEX_ANAES_METHOD 
+on ACCT_REG_SHADOW ( ANAES_METHOD_CODE ASC )  {executed in 4 msec}
+11:43:34.570 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Table: ACCT_ROLE */ /*==============================================================*/ 
+create table ACCT_ROLE ( ID NUMBER(19) not null, ROLE_NAME varchar2(20) not null, AUTHITIY 
+VARCHAR2(60) )  {executed in 6 msec}
+11:43:34.572 [main] INFO  jdbc.sqltiming - comment on column ACCT_ROLE.ID is 'ID'  {executed in 1 msec}
+11:43:34.574 [main] INFO  jdbc.sqltiming - comment on column ACCT_ROLE.ROLE_NAME is '角色名'  {executed in 1 msec}
+11:43:34.576 [main] INFO  jdbc.sqltiming - comment on column ACCT_ROLE.AUTHITIY is '权限'  {executed in 1 msec}
+11:43:34.582 [main] INFO  jdbc.sqltiming - alter table ACCT_ROLE add constraint PK_ACCT_ROLE primary key (ID)  {executed in 5 msec}
+11:43:34.589 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Table: ACCT_SURGICAL_NAME 
+*/ /*==============================================================*/ create table ACCT_SURGICAL_NAME 
+( CODE NUMBER(20) not null, NAME VARCHAR2(40), ENABLE CHAR(2), SOURCE_CODE VARCHAR2(20), SOURCE_NAME 
+VARCHAR2(40), PINYIN VARCHAR2(40) )  {executed in 6 msec}
+11:43:34.591 [main] INFO  jdbc.sqltiming - comment on column ACCT_SURGICAL_NAME.CODE is '代码'  {executed in 1 msec}
+11:43:34.593 [main] INFO  jdbc.sqltiming - comment on column ACCT_SURGICAL_NAME.NAME is '名称'  {executed in 1 msec}
+11:43:34.595 [main] INFO  jdbc.sqltiming - comment on column ACCT_SURGICAL_NAME.ENABLE is '是否有效'  {executed in 1 msec}
+11:43:34.597 [main] INFO  jdbc.sqltiming - comment on column ACCT_SURGICAL_NAME.SOURCE_CODE is '来源代码'  {executed in 1 msec}
+11:43:34.599 [main] INFO  jdbc.sqltiming - comment on column ACCT_SURGICAL_NAME.SOURCE_NAME is '来源名称'  {executed in 1 msec}
+11:43:34.602 [main] INFO  jdbc.sqltiming - comment on column ACCT_SURGICAL_NAME.PINYIN is '拼音码'  {executed in 1 msec}
+11:43:34.606 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Index: INDEX_OPER_PINYIN 
+*/ /*==============================================================*/ create index INDEX_OPER_PINYIN 
+on ACCT_SURGICAL_NAME ( PINYIN ASC )  {executed in 3 msec}
+11:43:34.659 [main] INFO  jdbc.sqltiming - /*==============================================================*/ /* Table: ACC_USER */ /*==============================================================*/ 
+create table ACC_USER ( ID NUMBER(20) not null, LOG_NAME VARCHAR2(20) not null, PWD VARCHAR2(30), 
+NAME VARCHAR2(20), SALT VARCHAR(40), CARETE_DATE TIMESTAMP, ROLE_ID NUMBER(20) )  {executed in 52 msec}
+11:43:34.662 [main] INFO  jdbc.sqltiming - comment on column ACC_USER.ID is 'ID'  {executed in 1 msec}
+11:43:34.664 [main] INFO  jdbc.sqltiming - comment on column ACC_USER.LOG_NAME is '用户名'  {executed in 1 msec}
+11:43:34.667 [main] INFO  jdbc.sqltiming - comment on column ACC_USER.PWD is '密码'  {executed in 2 msec}
+11:43:34.670 [main] INFO  jdbc.sqltiming - comment on column ACC_USER.NAME is '姓名'  {executed in 1 msec}
+11:43:34.674 [main] INFO  jdbc.sqltiming - comment on column ACC_USER.SALT is 'SALT'  {executed in 2 msec}
+11:43:34.677 [main] INFO  jdbc.sqltiming - comment on column ACC_USER.CARETE_DATE is '注册日期'  {executed in 1 msec}
+11:43:34.680 [main] INFO  jdbc.sqltiming - comment on column ACC_USER.ROLE_ID is '角色ID'  {executed in 2 msec}
+11:43:34.687 [main] INFO  jdbc.sqltiming - alter table ACC_USER add constraint PK_ACC_USER primary key (ID)  {executed in 5 msec}
+11:43:34.695 [main] INFO  jdbc.sqltiming - alter table ACC_USER add constraint FK_ACC_USER_REFERENCE_ACCT_ROL foreign key (ROLE_ID) references 
+ACCT_ROLE (ID)  {executed in 7 msec}

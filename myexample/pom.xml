@@ -274,7 +274,12 @@
 			  </exclusion>
 			 </exclusions>
 		</dependency>
-			
+		<!-- pinyin4j-->
+		<dependency>	
+			<groupId>com.belerweb</groupId>
+			<artifactId>pinyin4j</artifactId>
+			<version>2.5.0</version>
+		</dependency>
 		<!-- SOAP begin -->
 		<dependency>
 			<groupId>org.apache.cxf</groupId>
@@ -713,11 +718,11 @@
 						<artifactId>maven-antrun-plugin</artifactId>
 						<configuration>
 							<target>
-								<property file="src/main/resources/application.development.properties" />
+								<!--<property file="src/main/resources/application.development.properties" />-->
 								<property file="src/main/resources/application.properties" />
 								<sql driver="${jdbc.driver}" url="${jdbc.url}" userid="${jdbc.username}" password="${jdbc.password}" onerror="continue" encoding="${project.build.sourceEncoding}">
 									<classpath refid="maven.test.classpath" />
-									<!--<transaction src="src/main/resources/sql/oracle/drop.sql" />-->
+									<transaction src="src/main/resources/sql/oracle/drop.sql" />
 									<transaction src="src/main/resources/sql/oracle/create.sql" />
 									<transaction src="src/main/resources/sql/oracle/init.sql" />
 								</sql>
