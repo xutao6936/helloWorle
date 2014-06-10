@@ -40,9 +40,10 @@
 			</bean>
 		</property>
 	</bean>
-
+	<!-- 设置springcontext帮助类 -->
+	<bean id="springContextHelper" class="com.thomas.myexample.utils.SpringContextHelper" lazy-init="false"/>
 	<!-- Spring Data Jpa配置,  扫描base-package下所有继承于Repository<T,ID>的接口 -->
- 	<jpa:repositories base-package="com.thomas.myexample"  transaction-manager-ref="transactionManager" entity-manager-factory-ref="entityManagerFactory"/>
+ 	<jpa:repositories base-package="com.thomas.myexample.repository" transaction-manager-ref="transactionManager" entity-manager-factory-ref="entityManagerFactory"/>
    
 	<!-- Jpa 事务配置，Jpa单数据源事务  -->
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">

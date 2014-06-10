@@ -6,12 +6,19 @@
 	<description>Shiro安全配置</description>
 
 	<!-- Shiro's main business-tier object for web-enabled applications -->
-	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager" >
 		<property name="realm" ref="shiroDbRealm" />
+		<!--<property name="realms">
+			<list>
+				<ref bean="shiroDbRealm"/>
+				<ref bean="shiroDbEmailRealm"/>
+			</list>
+		</property>
+		<property name="authenticator" ref="modularRealmAuthenticator"/>-->
 		<property name="cacheManager" ref="shiroEhcacheManager" />
 		<property name="rememberMeManager" ref="rememberMeManager"/>
 	</bean>
-	<!-- 由于默认的shiro记住我为1年， 更改时间需要重写 -->
+	<!-- 由于默认的shiro rememberMeManager为1年， 更改时间需要重写 -->
 	<!-- rememberMe管理器 -->
 	<bean id="rememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
 	    <property name="cipherKey" value="#{T(org.apache.shiro.codec.Base64).decode('4AvVhmFLUs0KTA3Kprsdag==')}"/>
@@ -22,12 +29,18 @@
 	    <property name="httpOnly" value="true"/>
 	    <property name="maxAge" value="864000"/><!-- 10天 单位s -->
 	</bean>
+	<!--
+	<bean id="modularRealmAuthenticator" class="org.apache.shiro.authc.pam.ModularRealmAuthenticator">  
+	    <property name="authenticationStrategy" ref="firstSuccessfulStrategy"></property>  
+	</bean>  
+  
+	<bean id="firstSuccessfulStrategy" class="org.apache.shiro.authc.pam.FirstSuccessfulStrategy" /> --> 
 	
-	
-	<!-- 項目自定义的Realm, 所有userService依赖的dao都需要用depends-on声明 -->
+	<!-- 項目自定义的Realm, 所有userService依赖的dao都需要用depends-on声明 -->				
 	<bean id="shiroDbRealm" class="com.thomas.myexample.service.basedata.ShiroDbRealm" depends-on="userDao">
 		<property name="userService" ref="userService"/>
 	</bean>
+	
 	
 	<!-- Shiro Filter -->
 	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">

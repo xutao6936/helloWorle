@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springside.modules.security.utils.Digests;
 import org.springside.modules.utils.Encodes;
 
+import com.thomas.myexample.email.SimpleMailService;
 import com.thomas.myexample.entity.basedata.User;
 import com.thomas.myexample.repository.BaseDao;
 import com.thomas.myexample.repository.basedata.UserDao;
@@ -31,8 +32,9 @@ public class UserService extends BaseService<User, Long> {
 	public static final int HASH_INTERATIONS = 1024;
 	private static final int SALT_SIZE = 8;
 
-	@Autowired
 	UserDao userDao;
+
+	SimpleMailService mail;
 
 	@Override
 	public BaseDao<User, Long> getDao() {
@@ -50,10 +52,20 @@ public class UserService extends BaseService<User, Long> {
 			entryptPassword(user);
 		}
 		userDao.save(user);
+		// 发送邮件
+		mail.sendNotifyMail(user.getName(), user.getEmail());
 	}
 
 	public User findByLogName(String logName) {
 		return userDao.findByLogName(logName);
+	}
+
+	public User findByEmail(String email) {
+		return userDao.findByEmail(email);
+	}
+
+	public User findByLogNameOrEmail(String content) {
+		return userDao.findByLogNameOrEmail(content, content);
 	}
 
 	/**
@@ -85,6 +97,16 @@ public class UserService extends BaseService<User, Long> {
 	 */
 	private Boolean isSuperAdmin(User user) {
 		return ((user.getId() != null) && (user.getId() == 1L));
+	}
+
+	@Autowired
+	public void setUserDao(UserDao userDao) {
+		this.userDao = userDao;
+	}
+
+	@Autowired
+	public void setMail(SimpleMailService mail) {
+		this.mail = mail;
 	}
 
 }

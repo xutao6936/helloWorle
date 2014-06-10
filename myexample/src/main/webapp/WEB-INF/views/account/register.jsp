@@ -17,7 +17,11 @@
 						remote: "${ctx}/register/checkLoginName"
 					},
 					// 此处错误信息的位置不对
-					roleList:"required"
+					roleList:"required",
+					email:{
+						required:true,
+						email:true
+					}
 				},
 				messages: {
 					logName: {
@@ -76,6 +80,12 @@
 				</c:forEach>
 				</div>
 			</div>	
+			<div class="control-group">
+				<label for="email" class="control-label">邮箱地址:</label>
+				<div class="controls">
+					<input type="email" id="email" name="email" class="input-large required" />
+				</div>
+			</div>
 			<!--  此处用jstl标签加载select -->
 			<!--<div class="control-group">
 				<label for="status" class="control-label">状态:</label>

@@ -3,9 +3,11 @@ com\thomas\myexample\service\basedata\BaseService.class
 com\thomas\myexample\service\basedata\ShiroUser.class
 com\thomas\myexample\entity\BaseEntity.class
 com\thomas\myexample\webservice\UserSoapService.class
+com\thomas\myexample\email\SimpleMailService.class
 com\thomas\myexample\entity\basedata\AnaesMethod.class
 com\thomas\myexample\web\utils\UrlConstants.class
 com\thomas\myexample\entity\basedata\Operator.class
+com\thomas\myexample\utils\BaseDigests.class
 com\thomas\myexample\webservice\response\dto\RoleDto.class
 com\thomas\myexample\repository\basedata\DictDao.class
 com\thomas\myexample\web\account\BaseController.class
@@ -16,6 +18,7 @@ com\thomas\myexample\entity\basedata\Operatroom.class
 com\thomas\myexample\entity\basedata\SurgicalName.class
 com\thomas\myexample\repository\BaseDao.class
 com\thomas\myexample\service\basedata\ShiroDbRealm.class
+com\thomas\myexample\utils\SpringContextHelper.class
 com\thomas\myexample\service\AcctDictList.class
 com\thomas\myexample\entity\basedata\Diagnosi.class
 com\thomas\myexample\web\account\RegisterController.class
@@ -27,6 +30,7 @@ com\thomas\myexample\webservice\response\WSResult.class
 com\thomas\myexample\webservice\response\GetRoleResult.class
 com\thomas\myexample\service\basedata\UserService.class
 com\thomas\myexample\service\basedata\ServiceException.class
+com\thomas\myexample\utils\PinyinUtils.class
 com\thomas\myexample\entity\basedata\Role.class
 com\thomas\myexample\entity\basedata\User.class
 com\thomas\myexample\repository\basedata\RoleDao.class

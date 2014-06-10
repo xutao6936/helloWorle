@@ -9,12 +9,15 @@ import com.google.common.base.Objects;
  */
 public class ShiroUser implements Serializable {
 	private static final long serialVersionUID = -1373760761780840081L;
+	public Long id;
 	public String loginName;
 	public String name;
+	public String email;
 
-	public ShiroUser(String loginName, String name) {
+	public ShiroUser(String loginName, String email, String name) {
 		this.loginName = loginName;
 		this.name = name;
+		this.email = email;
 	}
 
 	public String getName() {
@@ -65,4 +68,5 @@ public class ShiroUser implements Serializable {
 		}
 		return true;
 	}
+
 }

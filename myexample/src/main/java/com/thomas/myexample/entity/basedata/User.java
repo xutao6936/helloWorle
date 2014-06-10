@@ -16,6 +16,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
+import org.hibernate.validator.constraints.Email;
+
 import com.thomas.myexample.entity.BaseEntity;
 
 /**
@@ -43,6 +45,10 @@ public class User extends BaseEntity implements Serializable {
 	private String salt;
 
 	private String plainPwd;
+
+	private String enable;
+
+	private String email;
 
 	public User() {
 	}
@@ -114,6 +120,23 @@ public class User extends BaseEntity implements Serializable {
 
 	public void setPlainPwd(String plainPwd) {
 		this.plainPwd = plainPwd;
+	}
+
+	public String getEnable() {
+		return enable;
+	}
+
+	public void setEnable(String enable) {
+		this.enable = enable;
+	}
+
+	@Email
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 }

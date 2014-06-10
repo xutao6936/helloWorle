@@ -3,6 +3,7 @@ E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\reposit
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\utils\PinyinUtils.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\web\account\BaseController.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\service\AcctDictList.java
+E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\utils\SpringContextHelper.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\entity\BaseEntity.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\service\basedata\BaseService.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\service\basedata\ServiceException.java
@@ -13,6 +14,7 @@ E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\web\acc
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\webservice\response\GetUserResult.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\webservice\response\WSResult.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\entity\basedata\User.java
+E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\utils\BaseDigests.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\web\utils\UrlConstants.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\entity\basedata\Diagnosi.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\service\DictService.java
@@ -27,6 +29,7 @@ E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\service
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\entity\basedata\Role.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\webservice\WsConstants.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\webservice\UserSoapServiceImpl.java
+E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\email\SimpleMailService.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\web\utils\UrlMappingUtils.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\entity\basedata\AcctDict.java
 E:\gitRepository\helloWorle\myexample\src\main\java\com\thomas\myexample\webservice\UserSoapService.java

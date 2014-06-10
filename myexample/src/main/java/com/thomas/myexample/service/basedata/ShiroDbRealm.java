@@ -6,6 +6,7 @@ import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
+import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -13,6 +14,7 @@ import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springside.modules.utils.Encodes;
 
 import com.thomas.myexample.entity.basedata.User;
@@ -26,14 +28,17 @@ import com.thomas.myexample.entity.basedata.User;
  */
 public class ShiroDbRealm extends AuthorizingRealm {
 
-	// 必须有set和get方法
+	// 必须有set方法
 	private UserService userService;
 
 	// 授权回调函数，进行鉴权但缓存中没有时调用
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
 		ShiroUser shiroUser = (ShiroUser) principals.getPrimaryPrincipal();
-		User user = userService.findByLogName(shiroUser.getLoginName());
+		User user = userService.findByLogNameOrEmail(shiroUser.getLoginName());
+		if (user == null) {
+			throw new UnknownAccountException();
+		}
 		SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
 		// 基于role的权限信息
 		info.addRole(user.getRole().getRoleName());
@@ -58,20 +63,17 @@ public class ShiroDbRealm extends AuthorizingRealm {
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authcToken) throws AuthenticationException {
 		UsernamePasswordToken token = (UsernamePasswordToken) authcToken;
-		User user = userService.findByLogName(token.getUsername());
+		User user = userService.findByLogNameOrEmail(token.getUsername());
 		if (user != null) {
 			byte[] salts = Encodes.decodeHex(user.getSalt());
-			return new SimpleAuthenticationInfo(new ShiroUser(user.getLogName(), user.getName()), user.getPwd(),
-					ByteSource.Util.bytes(salts), getName());
+			return new SimpleAuthenticationInfo(new ShiroUser(user.getLogName(), user.getEmail(), user.getName()),
+					user.getPwd(), ByteSource.Util.bytes(salts), getName());
 		} else {
 			return null;
 		}
 	}
 
-	public UserService getUserService() {
-		return userService;
-	}
-
+	@Autowired
 	public void setUserService(UserService userService) {
 		this.userService = userService;
 	}

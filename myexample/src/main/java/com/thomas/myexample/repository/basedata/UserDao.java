@@ -13,4 +13,8 @@ import com.thomas.myexample.repository.BaseDao;
 public interface UserDao extends BaseDao<User, Long> {
 
 	User findByLogName(String logName);
+
+	User findByEmail(String email);
+
+	User findByLogNameOrEmail(String logName, String email);
 }
